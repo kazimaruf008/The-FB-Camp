@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js'
 import './App.css';
 import Home from './components/Home/Home';
 import TeamDetails from './components/TeamDetails/TeamDetails';
