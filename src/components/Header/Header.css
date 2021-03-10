@@ -1,0 +1,19 @@
+.banner {
+    background:url(../images/banner2.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: #f1f1f1;
+}
+.logo {
+    font-weight: bold;
+    color: #26b438 !important;
+    text-shadow: 2px 2px #cbc73d;
+    font-size: 23px;
+}
+.banner-text{
+    font-size:70px;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgba(00, 00, 0,0.2);
+}

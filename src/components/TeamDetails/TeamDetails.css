@@ -1,0 +1,26 @@
+.banner {
+    background: url(../images/banner.jpg) no-repeat;
+    background-size:cover;
+    height:515px;
+}
+div img{
+    width: 100%;
+}
+.details-cart{
+    background-color: blue;
+    color:white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.icons{
+    font-size:35px;
+}
+.youtube{
+    color:red;
+}
+.instagram{
+    color:rgb(255, 0, 191);
+}
+.bg-color{
+    background-color: lightgray;
+}
