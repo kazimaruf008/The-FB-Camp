@@ -20,7 +20,7 @@ const TeamDetails = () => {
         .then(data => setDetails(data.teams[0]))
     }, [idTeam])
 
-    const {strTwitter, strYoutube, strDescriptionEN, strFacebook, strGender, strInstagram, strLeague, strStadiumDescription, strCountry, intFormedYear} = details
+    const {strTwitter, strYoutube, strDescriptionEN, strFacebook, strGender, strInstagram, strLeague, strStadiumDescription, strCountry, strTeamBadge, intFormedYear} = details
     
     // let setImages;
     // if(str){}
@@ -29,10 +29,7 @@ const TeamDetails = () => {
             <div className="container">
                 <div className="row d-flex justify-content-center banner">
                     <div className="coll-md-12">
-                        <img src=
-                            {
-                                strGender=== 'Male'? <img src={male}/>:<img src={female}/>
-                            } alt="facebook"/>
+                        <img src={strTeamBadge} alt="img"/>
                     </div>
                 </div>
                 <div className="row d-flex justify-content-between mt-5 details-cart">
@@ -45,7 +42,9 @@ const TeamDetails = () => {
                         <h5>Gender: {strGender}</h5>
                     </div>
                     <div className="col-md-4">
-                        <img src={male} alt=""/>
+                        {
+                            strGender=== 'Male'? <img src={male}/>:<img src={female}/>
+                        }
                     </div>
                 </div>
                 <div className="row mt-5">
