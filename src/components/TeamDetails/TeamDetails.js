@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import './TeamDetails.css'
 import male from '../images/male.png'
+import female from '../images/female.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
@@ -20,12 +21,18 @@ const TeamDetails = () => {
     }, [idTeam])
 
     const {strTwitter, strYoutube, strDescriptionEN, strFacebook, strGender, strInstagram, strLeague, strStadiumDescription, strCountry, strTeamBadge, intFormedYear} = details
+    
+    // let setImages;
+    // if(str){}
     return (
         <div className="bg-color">
             <div className="container">
                 <div className="row d-flex justify-content-center banner">
                     <div className="coll-md-12">
-                        <img src={strTeamBadge} alt=""/>
+                        <img src=
+                            {
+                                strGender=== 'Male '? <img src={male}/>:<img src={female}/>
+                            } alt="ok"/>
                     </div>
                 </div>
                 <div className="row d-flex justify-content-between mt-5 details-cart">
