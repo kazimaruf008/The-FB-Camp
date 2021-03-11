@@ -9,7 +9,7 @@ const Team = (props) => {
     return (
         <div className="mt-5 col-md-4 text-center">
             <div className="card">
-                <img src={strTeamBadge} className="card-img-top"></img>
+                <img src={strTeamBadge} className="card-img-top" alt="img"></img>
                 
                 <div className="card-body">
                     <h5 className="card-title">{strLeague}</h5>
