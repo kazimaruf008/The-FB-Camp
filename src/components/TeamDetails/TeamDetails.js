@@ -20,7 +20,7 @@ const TeamDetails = () => {
         .then(data => setDetails(data.teams[0]))
     }, [idTeam])
 
-    const {strTwitter, strYoutube, strDescriptionEN, strFacebook, strGender, strInstagram, strLeague, strStadiumDescription, strCountry, strTeamBadge, intFormedYear} = details
+    const {strTwitter, strYoutube, strDescriptionEN, strFacebook, strGender, strInstagram, strLeague, strStadiumDescription, strCountry, intFormedYear} = details
     
     // let setImages;
     // if(str){}
