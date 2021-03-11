@@ -32,7 +32,7 @@ const TeamDetails = () => {
                         <img src=
                             {
                                 strGender=== 'Male'? <img src={male}/>:<img src={female}/>
-                            } alt=""/>
+                            } alt="facebook"/>
                     </div>
                 </div>
                 <div className="row d-flex justify-content-between mt-5 details-cart">
